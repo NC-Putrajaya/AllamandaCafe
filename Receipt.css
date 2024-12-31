@@ -1,0 +1,143 @@
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #81CAD6;
+    border-bottom: 2px solid #ddd;
+    position: relative;       /* Allows absolute positioning of back-btn and icon */
+}
+
+.receipt-header .back-btn {
+    position: absolute;
+    left: 20px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Ensure user icon is aligned to the right */
+.receipt-header .fas.fa-user-circle {
+    position: absolute;
+    right: 20px;
+    font-size: 24px;
+    color: #333;
+    top: 50%;               /* Vertically center the icon */
+    transform: translateY(-50%); /* Fine-tune vertical alignment */
+}
+
+.receipt-header h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;  /* Ensures the text is centered in the available space */
+}
+
+.back-btn {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+}
+
+.receipt-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.receipt-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.food-img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.item-details h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.item-details p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Create a new wrapper for quantity */
+.quantity-container {
+    text-align: right; /* Aligns the quantity text to the right */
+    margin-top: 10px; /* Optional: Adds spacing between summary and quantity */
+}
+
+/* Align the quantity text */
+.item-quantity {
+    text-align: right; /* Aligns the quantity text to the right */
+    margin: 0; /* Ensures no extra margins */
+    color: #555;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+.receipt-summary p {
+    text-align: right;
+    margin: 10px 0;
+    font-size: 14px;
+    margin-right: 0;
+}
+
+.receipt-actions {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.print-btn, .home-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.print-btn {
+    background-color: #96A992;
+    color: black;
+    display: inline-block;
+}
+
+.print-btn:hover {
+    background-color: #45a049;
+}
+
+.home-btn {
+    background-color: #96A992;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.home-btn:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="Checkout.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b289f244d1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="checkout-container">
+        <header class="checkout-header">
+            <a href="memberdashboard.html" class="back-btn">←</a>
+            <h1>Checkout</h1>
+            <div class="header-icons">
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-question-circle"></i>
+            </div>
+        </header>
+
+        <div class="checkout-item">
+            <img src="placeholder.png" alt="Nasi Goreng Ayam" class="item-image">
+            <div class="item-details">
+                <h2>Nasi Goreng Ayam</h2>
+                <p>RM6.00</p>
+                <div class="item-quantity">
+                    <span>Quantity:</span>
+                    <button class="quantity-btn">-</button>
+                    <span class="quantity-number">1</span>
+                    <button class="quantity-btn">+</button>
+                </div>
+            </div>
+            <a href="#" class="remove-link">remove</a>
+        </div>
+
+        <div class="checkout-summary">
+            <p class="summary-row">
+                <span class="summary-center">Total number of items: <span>1</span></span>
+            </p>
+            <p>Time: <span>DD/MM/YY</span></p>
+            <p>Location: <span>XXXX</span></p>
+            <p class="summary-row"><span class="summary-right">Total Cost: <span>RM6.00</span></span></p>
+        </div>
+
+        <a href="Receipt.html" class="confirm-payment-btn">Confirm Payment</a>
+    </div>
+</body>
+</html>

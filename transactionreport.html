@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summary Report</title>
+  <link rel="stylesheet" href="transactionreport.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/b289f244d1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="dashboard-container">
+      <!-- Sidebar -->
+      <div class="sidebar">
+          <div class="profile">
+              <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAxL3JtNjA5LXNvbGlkaWNvbi13LTAwMi1wLnBuZw.png" alt="Profile" class="profile-icon">
+              <p class="username">Chong</p>
+          </div>
+          <nav class="nav-menu">
+            <a href="dashboard.html" class="nav-item">Dashboard</a>
+            <a href="registered.html" class="nav-item">Registered Members</a>
+            <a href="edit.html" class="nav-item">Edit Items</a>
+            <a href="TransactionRecord.html" class="nav-item">Summary Report</a>
+          </nav>
+          <a href="Kafe.html" class="logout-btn">Logout</a>
+      </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Header Section -->
+      <div class="header">
+        <!-- Left Section -->
+        <div class="header-left">
+          <label for="admin-id">Admin ID</label>
+          <input type="text" id="admin-id" class="admin-input" placeholder="Admin ID">
+          <label for="date">Date</label>
+          <input type="text" id="date" class="date-input" placeholder="DD/MM/YYYY">
+        </div>
+
+        <div class="header-right">
+          <div class="monthly-summary">
+            <select id="monthly-dropdown" class="monthly-dropdown">
+              <option value="january">Monthly</option>
+              <option value="february">Daily</option>
+              <option value="march">Weekly</option>
+            </select>
+        </div>
+
+          <div class="total">
+            Total Overall: RMXXXX
+          </div>
+        </div>
+      </div>
+      <nav class="printer">
+        <i class="fa-solid fa-print"></i>
+        <a href="" class="print-item">Print</a>
+      </nav>
+    
+      <table class="report-table">
+        <thead>
+          <tr>
+            <th>Item ID</th>
+            <th>Item Name</th>
+            <th>Item Description</th>
+            <th>Qty</th>
+            <th>Price</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>A12</td>
+            <td>Item A</td>
+            <td>Item A description</td>
+            <td>X</td>
+            <td>XXX</td>
+            <td>XXX</td>
+          </tr>
+          <tr>
+            <td>B12</td>
+            <td>Item B</td>
+            <td>Item B description</td>
+            <td>X</td>
+            <td>XXX</td>
+            <td>XXX</td>
+          </tr>
+          <tr>
+            <td>C12</td>
+            <td>Item C</td>
+            <td>Item C description</td>
+            <td>X</td>
+            <td>XXX</td>
+            <td>XXX</td>
+          </tr>
+          <tr>
+            <td>D12</td>
+            <td>Item D</td>
+            <td>Item D description</td>
+            <td>X</td>
+            <td>XXX</td>
+            <td>XXX</td>
+          </tr>
+          <tr>
+            <td>E12</td>
+            <td>Item E</td>
+            <td>Item E description</td>
+            <td>X</td>
+            <td>XXX</td>
+            <td>XXX</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

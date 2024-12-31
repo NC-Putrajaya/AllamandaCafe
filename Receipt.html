@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt</title>
+    <link rel="stylesheet" href="Receipt.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b289f244d1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="receipt-header">
+            <a href="memberdashboard.html" class="back-btn">←</a>
+            <h2>Receipt</h2>
+            <i class="fas fa-user-circle"></i>
+        </div>
+    </header>
+    <main>
+        <div class="receipt-container">
+            <div class="receipt-item">
+                <img src="food-placeholder.png" alt="Nasi Goreng Ayam" class="food-img">
+                <div class="item-details">
+                    <h3>Nasi Goreng Ayam</h3>
+                    <p>RM6.00</p>
+                </div>
+            </div>
+            <div class="quantity-container">
+                <p class="item-quantity"><strong>Quantity:</strong> x1</p>
+            </div>
+            <hr>
+            <div class="receipt-summary">
+                <p><strong>Time:</strong> DD/MM/YY</p>
+                <p><strong>Location:</strong> XXXXX</p>
+                <p><strong>Payment Method:</strong> Debit</p>
+                <p><strong>Total Cost:</strong> RM6.00</p>
+            </div>
+        </div>
+        <div class="receipt-actions">
+            <!--Print button goes here-->
+            <button class="print-btn">Print</button>
+            <a href="memberdashboard.html" class="home-btn">Home</a>
+        </div>
+    </main>
+</body>
+</html>

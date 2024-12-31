@@ -1,0 +1,113 @@
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #81CAD6;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Transaction List */
+.transaction-list {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.transaction-item:last-child {
+    border-bottom: none;
+}
+
+.transaction-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.transaction-info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.transaction-info strong {
+    color: #333;
+}
+
+/* Review Receipt Button */
+.transaction-actions {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    position: relative; /* Allows positioning the button at the bottom */
+    width: 100%; /* Ensures full width */
+    margin-top: 20px; /* Adds spacing between the button and content above */
+}
+
+.review-receipt-btn {
+    padding: 8px 15px;
+    background-color: #96A992;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    white-space: nowrap; /* Prevents button text from wrapping */
+    position: absolute; /* Position the button relative to its parent container */
+    bottom: 10px; /* Move the button towards the bottom */
+}
+
+.review-receipt-btn:hover {
+    background-color: #45a049;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.prev-btn, .next-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #96A992;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: #45a049;
+}

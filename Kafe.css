@@ -1,0 +1,95 @@
+/* styles.css */
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+header {
+    font-family: 'Poppins', sans-serif;
+    background-color: #81CAD6;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2.0rem;
+}
+
+
+.logo i {
+    font-size: 2.0rem; /* Adjust logo size */
+    color: yellow;   /* Logo color */
+}
+
+.logo span{
+    font-size: 2.0rem;  /* Adjust text size */
+    color: rgb(0, 0, 0);
+}
+
+
+h2 {
+    margin: 20px 0;
+    font-size: 1.4rem;
+    color: #333;
+    text-decoration: none;
+}
+
+
+.login-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 70px;
+    text-decoration: none;
+}
+
+.option {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 100px;
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.option h2 a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+}
+
+.option:hover {
+    background-color: #f0f0f0;
+}
+
+.register-link {
+    margin-top: 10px;
+    margin-right: 210px;
+}
+
+.register-link a {
+    text-decoration: underline;
+    color: #000000;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .login-box {
+        width: 100px;
+        height: 100px;
+    }
+}

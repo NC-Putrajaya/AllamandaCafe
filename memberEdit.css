@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #81CAD6;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    font-size: 3rem;
+    margin-right: 15px;
+    color: yellow;
+}
+
+.logo h1 {
+    font-size: 2rem;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+    padding: 40px;
+}
+
+.form-container {
+    margin-top: -100px;
+    width: 500px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.profile-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.profile-icon {
+    font-size: 8rem;
+    color: #000000;
+}
+
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.form-group label {
+    flex: 0 0 150px; /* Set a fixed width for labels */
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: right; /* Align labels to the right */
+}
+
+.form-group input {
+    flex: 1; /* Allow input to take up the remaining space */
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%; /* Ensure input fills available space */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.edit-btn {
+    padding: 10px 15px;
+    background-color: #D9D9D9;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-btn:hover {
+    background-color: #d9d9d991;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center;
+}
+
+.confirm-btn {
+    flex: 1;
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: #0CF400;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.confirm-btn:hover {
+    background-color: #28bd21;
+}
+
+.cancel-btn {
+    flex: 1;
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: #FF0000;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.cancel-btn:hover {
+    background-color: #b71c1c;
+}

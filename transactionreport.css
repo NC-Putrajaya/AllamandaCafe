@@ -1,0 +1,192 @@
+/* General Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  display: flex;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #81CAD6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  position: fixed;
+  height: 100vh;
+}
+
+.profile {
+  width: 100%;
+  background-color: #EDCD44;
+  flex-direction: column;
+  display: flex;
+  padding: 10px;
+  box-sizing: border-box;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.profile img {
+  width: 80px;
+  height: 80px;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile .username {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.printer {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.0em;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  padding-left: 1200px;
+  display: flex;
+}
+
+.print-item {
+  color:#333;
+
+}
+.nav-menu {
+    padding-left: 15px;
+    margin: 10px 0;
+    flex-grow: 1
+}
+
+.nav-item {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 0;
+    margin: 10px 0;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+    width: 250px;
+    background-color: #6b928e;
+    border-radius: 5px;
+    margin-left: -15px;
+}
+
+.logout-btn {
+  background-color: #FF0000;
+  color: white;
+  border: none;
+  padding: 10px 50px;
+  cursor: pointer;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 20px;
+  align-self: center;
+  text-align: center;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.logout-btn:hover {
+  background-color: #b71c1c;
+}
+
+/* Main Content Styling */
+.main-content {
+  flex-grow: 1;
+  background-color: #f5f5f5;
+  margin-left: 250px;
+}
+
+
+.header {
+  background-color: #81CAD6;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  font-size: 1.0em;
+}
+
+.header .header-left {
+  flex-grow: 3;
+}
+
+.header .header-right {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.admin-input,
+.date-input {
+  width: 30%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.monthly-summary,
+.monthly-dropdown {
+  text-align: left;
+  width: 150px;
+  height: 30px;
+  border-radius: 5%;
+  margin-left: 7px;
+  color: #000;
+}
+
+.total {
+  font-weight: bold;
+  color: #000;
+}
+
+/* Report Table Styling */
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+.report-table th,
+.report-table td {
+  border: 5px solid #ddd;
+  padding: 30px;
+  text-align: center;
+  border-color: #000;
+}
+
+.report-table th {
+  background-color: #f9f9f9;
+  color: #000;
+  font-weight: bold;
+}
+
+.report-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
