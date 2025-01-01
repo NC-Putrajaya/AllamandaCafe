@@ -1,3 +1,35 @@
+<?php
+$servername = "34.126.132.128";
+$username = "liquid-sylph-446512-p8:asia-southeast1:allamandacafedb";
+$password = "";
+$dbname = "wadprojectdb";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Check if form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $userID = $_POST['user_id'];
+    $userPassword = $_POST['password'];
+
+    // SQL query to check user credentials
+    $sql = "SELECT * FROM users WHERE id='$userID' AND password='$userPassword'";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        // User found
+        header("Location: index.html");
+    } else {
+        // Invalid credentials
+        echo "Invalid ID or Password";
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,16 +51,15 @@
       <h1>Cafe Kuning Allamanda</h1>
       <h2>Member Login</h2>
     </header>
-    <form class="login-form">
+    <form class="login-form" method="POST">
     <div>
-      <input type="text" placeholder="ID" required>
+      <input type="text" name="userID" placeholder="ID" required>
     </div>
     <div>
-      <input type="password" placeholder="Password" required>
+      <input type="password" name="userPassword" placeholder="Password" required>
     </div>
-      <a href="index.html" type="submit">Login</a>
+      <button type="submit">Login</button>
     </form>
   </div>
 </body>
 </html>
-
