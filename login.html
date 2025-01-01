@@ -14,11 +14,11 @@ if ($conn->connect_error) {
 
 // Check if form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $userID = $_POST['user_id'];
-    $userPassword = $_POST['password'];
+    $userID = $_POST['userID'];
+    $userPassword = $_POST['userPassword'];
 
     // SQL query to check user credentials
-    $sql = "SELECT * FROM users WHERE id='$userID' AND password='$userPassword'";
+    $sql = "SELECT * FROM users WHERE user_id='$userID' AND password='$userPassword'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
