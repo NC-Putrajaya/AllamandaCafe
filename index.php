@@ -1,5 +1,5 @@
 <?php
-$servername = "liquid-sylph-446512-p8:asia-southeast1:allamandacafedb";
+$servername = "34.126.132.128";
 $username = "root";
 $password = "";
 
